@@ -34,7 +34,7 @@ const extendedJoi = Joi.extend({
 });
 
 const schema = Joi.object({
-  'github-token': Joi.string().trim().max(100),
+  'github-token': Joi.string().trim().max(1000),
   'freeze-pr': Joi.string().trim().max(100),
   'repo-frozen': Joi.boolean()
     .default(false)
